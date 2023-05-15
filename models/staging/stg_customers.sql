@@ -11,10 +11,10 @@ with source as (
 renamed as (
 
     select
+        {{ database }} as db_source,
         id as customer_id,
         first_name,
         last_name
-        {{ database }} as db_source
 
     from source
 
