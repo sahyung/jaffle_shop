@@ -51,7 +51,7 @@ final as (
         customers.customer_id,
         customers.first_name,
         customers.last_name,
-        custom_variable as db_source,
+        customers.db_source,
         customer_orders.first_order,
         customer_orders.most_recent_order,
         customer_orders.number_of_orders,
