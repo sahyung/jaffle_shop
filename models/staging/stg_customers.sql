@@ -13,8 +13,8 @@ renamed as (
     select
         id as customer_id,
         first_name,
-        last_name,
-        {{ custom_variable }} as db_source
+        last_name
+        -- {{ custom_variable }} as db_source
 
     from source
 

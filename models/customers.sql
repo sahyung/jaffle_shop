@@ -51,7 +51,7 @@ final as (
         customers.customer_id,
         customers.first_name,
         customers.last_name,
-        customers.db_source,
+        cast(custom_variable as {{ dbt_utils.type_string() }}) as db_source,
         customer_orders.first_order,
         customer_orders.most_recent_order,
         customer_orders.number_of_orders,
