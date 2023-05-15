@@ -14,7 +14,7 @@ renamed as (
         id as customer_id,
         first_name,
         last_name,
-        {{ custom_variable }} as db_source
+        {{ ref('custom_variable') }} as db_source
 
     from source
 
