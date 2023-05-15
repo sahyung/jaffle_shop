@@ -11,7 +11,7 @@ with source as (
 renamed as (
 
     select
-        {{ var("custom_variable") }} as db_source,
+        '{{ var("custom_variable") }}' as db_source,
         id as customer_id,
         first_name,
         last_name
