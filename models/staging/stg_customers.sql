@@ -11,7 +11,7 @@ with source as (
 renamed as (
 
     select
-        {{ database }} as db_source,
+        cast({{ custom_variable }} as {{ dbt_utils.type_string() }}) as db_source,
         id as customer_id,
         first_name,
         last_name
